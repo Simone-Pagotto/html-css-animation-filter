@@ -1,0 +1,225 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    transition: 3s ease-out;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 3s ease-out;
+}
+
+.ex-2-square:active {
+  width: 200px;
+  height: 200px;
+}
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 3s ease-out;
+}
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation: fade 5s ease-out;
+}
+
+@keyframes fade {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+  100% {
+    width: 0px;
+    height: 0px;
+  }
+
+
+}
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+    transition: 3s ease-out;
+}
+
+.ex-5-square:hover {
+  width: 120px;
+  height: 120px;
+}
+.ex-5-square:active {
+  width: 30px;
+  height: 30px;
+}
+
+.ex-6-img, .ex-7-img, .ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover {
+  filter: grayscale(2);
+}
+
+.ex-7-img {
+  transition: 3s linear;
+}
+.ex-7-img:hover {
+  filter: hue-rotate(190deg) blur(2px);
+}
+
+.ex-8-img{
+  transition: 3s linear;
+}
+
+.ex-8-img:hover {
+  filter: drop-shadow(10px 20px 10px coral) hue-rotate(360deg);
+  border-radius: 5px;
+}
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+    transition: 5s linear;
+}
+
+.ex-9-img:hover {
+  filter: brightness(30%) contrast(25%);
+  border-radius: 5px;
+  transform: scale(0.75);
+}
+
+
+.ex-10-icon {
+    font-size: 60px;
+    /* animation: rotation 0.5s infinite ; */
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+.ex-11-icon {
+    font-size: 60px;
+
+}
+
+.ex-11-icon:hover {
+  animation: spin 3s linear, spin-back 0.3s linear 3s;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(270deg)
+  }
+}
+
+@keyframes spin-back {
+  from{
+    transform: rotate(270deg)
+  }
+  to{
+    transform: rotate(0deg)
+  }
+}
+.ex-12-button, .ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-12-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation: move-top 2s linear alternate infinite;
+}
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+    animation: move-bottom 2s linear alternate infinite;
+}
+
+@keyframes move-top {
+  from{
+    left:10%;
+  }
+  to{
+    left:69%
+  }
+}
+
+@keyframes move-bottom {
+  from{
+    right:20%;
+  }
+  to{
+    right:69%
+  }
+
+.ex-13-top-white {
+      position: absolute;
+      top: -10px;
+      left: 10%;
+      background: #f5f5f5;
+      width: 60px;
+      height: 20px;
+      animation: movetop 2s linear;
+}
+
+@keyframes movetop {
+  from{
+    left:10%;
+  }
+  to{
+    left:69%
+  }
+}
