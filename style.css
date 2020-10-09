@@ -178,7 +178,7 @@
     height: 20px;
     animation: move-top 2s linear alternate infinite;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-12-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
@@ -186,6 +186,80 @@
     width: 60px;
     height: 20px;
     animation: move-bottom 2s linear alternate infinite;
+}
+
+.ex-13-top-white {
+      position: absolute;
+      top: -10px;
+      left: 10%;
+      background: #f5f5f5;
+      width: 60px;
+      height: 20px;
+      animation-name: movearound, movearoundI, movearoundII, movearoundIII,movearoundIV;
+      animation-duration: 1s;
+      animation-delay: 0s,1s,2s,3s,4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+
+}
+.ex-13-bottom-white {}
+
+@keyframes movearound {
+  0% {
+    left: 10%;
+  }
+
+  100% {
+    left:100%;
+  }
+}
+
+@keyframes movearoundI {
+  0% {
+    top:-10px;
+    left: 100%;
+  }
+
+  100% {
+    top:60px;
+    left:100%;
+  }
+}
+
+@keyframes movearoundII {
+  0% {
+    top:60px;
+    left:100%;
+  }
+
+  100% {
+    top:60px;
+    left:-30%;
+  }
+}
+
+@keyframes movearoundIII {
+  0% {
+    top:60px;
+    left:-30%;
+  }
+
+  100% {
+    top:-20px;
+    left:-30%;
+  }
+}
+
+@keyframes movearoundIII {
+  0% {
+    top:-20px;
+    left:-30%;
+  }
+
+  100% {
+    top:-20px;
+    left:10%;
+  }
 }
 
 @keyframes move-top {
@@ -202,24 +276,5 @@
     right:20%;
   }
   to{
-    right:69%
+    right:69%;
   }
-
-.ex-13-top-white {
-      position: absolute;
-      top: -10px;
-      left: 10%;
-      background: #f5f5f5;
-      width: 60px;
-      height: 20px;
-      animation: movetop 2s linear;
-}
-
-@keyframes movetop {
-  from{
-    left:10%;
-  }
-  to{
-    left:69%
-  }
-}
